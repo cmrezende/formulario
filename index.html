@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>💪🏻Formulários de Cadastro - Evento Tecnológico Kenzie</title>
+</head>
+
+<body>
+   <form>
+      <div>
+         <label for="nome">Nome</label>
+         <br />
+
+         <input type="text" name="nome" id="nome" placeholder="Digite seu nome aqui..." required />
+      </div>
+
+      <br />
+
+      <div>
+         <label for="email">Email</label>
+         <br />
+
+         <input type="text" name="email" id="email" placeholder="Digite seu email aqui..." required />
+      </div>
+
+      <br />
+
+      <div>
+         <label for="description">O que te motivou participar do evento?</label>
+         <br />
+
+         <textarea name="description" id="description" placeholder="Descreva aqui..." cols="40" rows="10"></textarea>
+      </div>
+
+      <br />
+
+      <div>
+         <label for="module">Selecione seu módulo</label>
+         <br />
+         <select name="module" id="module" required>
+            <option value="" selected disabled>Escolher módulo</option>
+            <option value="m1">Front-end</option>
+            <option value="m2">Back-end</option>
+            <option value="m3">Full-stack</option>
+         </select>
+      </div>
+
+      <br />
+
+      <div>
+         <label for="password">Cadastre uma senha</label>
+         <br />
+         <input type="password" name="password" placeholder="Digite seu senha aqui..." required />
+
+      </div>
+
+      <br />
+
+      <div>
+         <label for="password-confirm">Confirme a senha</label>
+         <br />
+
+         <input type="password" name="password-confirm" id="password-confirm" placeholder="Repita a senha..."
+            required />
+
+      </div>
+
+      <br />
+
+      <div>
+         <p>Deseja receber novidades em seu email?</p>
+
+         <label for="newsletter">Sim</label>
+         <input id="newsletter" type="radio" required name="newsletter" value="sim" />
+
+         <label for="no-newsletter">Não</label>
+         <input id="no-newsletter" type="radio" required name="newsletter" value="nao">
+      </div>
+
+      <br />
+
+      <button type="submit">Cadastrar</button>
+
+   </form>
+
+</body>
+
+</html>
